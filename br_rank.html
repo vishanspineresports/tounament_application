@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+    *{ overflow-x: hidden; }
+    h1,h2,h3,h4,h5,h6 ,p { margin: 0; }
+    body { padding: 0; margin: 0; background: linear-gradient( 360deg, #00a1bb, #00a9a9 , #0053cf ); color: #fff; font-family: 'Poppins' , sans-serif ; }
+    .header { display: flex; align-items: center; padding: 10px; background: linear-gradient( 88deg, #0008ff , #00a1bb, #00ff66fa); color: #fff; box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; }
+    .header h2 { margin: 0px 0px 0px 10px; font-family: "Henny Penny", serif; color: e7e7e7; }
+    .header img { border-radius: 125px; }
+    .details { margin: 0px 0px 0px 15px; }
+    .tournament-card { padding: 20px; }
+    .tournament-card img { width: 110px; border-radius: 8px; max-width: 110px; }
+    .disco-card { display: flex; flex-direction: row; align-items: center; }
+    .join-btn { padding: 5px; width: 110px; border: none; color: #fff; background: linear-gradient(45deg, transparent, black); font-family: 'Poppins' , sans-serif; }
+    #loader { align-items: center; justify-content: center; height: 80vh; }
+</style>
+<link rel="stylesheet" type="text/css" href="loader.css">
+<div class="header">
+    <img src="https://i.ibb.co/Cb91MJ9/icon.jpg" style="width: 40px;">
+    <h2>Sniper eSports</h2>
+</div>
+<div class="tournament-grid" id="tournamentContainer"></div>
+<div id="loader" style="display: none;">
+    <div class="loader"></div>
+</div>
+<script src="brrank.js"></script>
